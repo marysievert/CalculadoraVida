@@ -23,18 +23,27 @@
 <style>
   body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(180deg, #fdf6f0, #fff);
+    background: linear-gradient(180deg, #fdf6f0, #ffffff);
   }
-  .question-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .question-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
   .radio-label {
-    display: block; padding: 12px 16px; margin: 8px 0;
-    border-radius: 8px; border: 1px solid #d2a679;
-    cursor: pointer; transition: all 0.2s ease;
+    display: block;
+    padding: 12px 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #d2a679;
+    cursor: pointer;
+    transition: all 0.2s ease;
   }
   .radio-label:hover { background-color: #ffe8d6; }
   input[type="radio"] { display: none; }
   input[type="radio"]:checked + span {
-    background-color: #d2691e; color: white; font-weight: 600; border-radius: 8px;
+    background-color: #d2691e;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
   }
   .btn-treatment {
     background-color: #a0522d;
@@ -61,9 +70,9 @@
   <p class="text-gray-700 text-lg leading-relaxed mb-8 text-center">
     <b>O que você faria se soubesse quanto tempo de vida ainda tem?</b><br><br>
     Esta calculadora foi criada para despertar a consciência sobre a forma como você vive, se alimenta, dorme, sente e pensa.
-    Ela não prevê o futuro mas revela como seus hábitos estão moldando seu presente e com ele, a sua longevidade.<br><br>
+    Ela não prevê o futuro — mas revela como seus hábitos estão moldando seu presente e, com ele, a sua longevidade.<br><br>
     A epigenética mostra que nossas escolhas são mais poderosas do que nossos genes.
-    Cada resposta aqui é uma conversa silenciosa entre você e o seu corpo, e o resultado será o reflexo da sua rotina.<br><br>
+    Cada resposta aqui é uma conversa silenciosa entre você e o seu corpo — e o resultado será o reflexo da sua rotina.<br><br>
     <b>Prepare-se para um encontro com a verdade mais íntima:</b> o quanto da sua vida você está realmente vivendo.
   </p>
 
@@ -85,7 +94,7 @@
              placeholder="Ex: 68">
     </div>
 
-    <!-- 🔹 EIXO BIOLÓGICO -->
+    <!-- 🔹 EIXO 1 – BIOLÓGICO -->
     <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">1. EIXO BIOLÓGICO</h2>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
@@ -157,127 +166,138 @@
       <label class="radio-label"><input type="radio" name="q10" value="3"><span>Às vezes</span></label>
       <label class="radio-label"><input type="radio" name="q10" value="1"><span>Não faço</span></label>
     </div>
-    <!-- 🔹 EIXO MENTAL E ESPIRITUAL -->
-    <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">2. EIXO MENTAL E ESPIRITUAL</h2>
+    <!-- 🔹 EIXO 2 – MENTAL E EMOCIONAL -->
+    <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">2. EIXO MENTAL E EMOCIONAL</h2>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você costuma se sentir calmo e equilibrado emocionalmente?</h3>
-      <label class="radio-label"><input type="radio" name="q11" value="5"><span>Quase sempre</span></label>
+      <h3 class="text-lg font-medium mb-2">Você se sente constantemente estressado ou ansioso?</h3>
+      <label class="radio-label"><input type="radio" name="q11" value="1"><span>Sim, com frequência</span></label>
       <label class="radio-label"><input type="radio" name="q11" value="3"><span>Às vezes</span></label>
-      <label class="radio-label"><input type="radio" name="q11" value="1"><span>Quase nunca</span></label>
+      <label class="radio-label"><input type="radio" name="q11" value="5"><span>Raramente</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você pratica meditação, respiração profunda ou oração diária?</h3>
-      <label class="radio-label"><input type="radio" name="q12" value="5"><span>Sim, todos os dias</span></label>
-      <label class="radio-label"><input type="radio" name="q12" value="3"><span>Algumas vezes por semana</span></label>
-      <label class="radio-label"><input type="radio" name="q12" value="1"><span>Raramente ou nunca</span></label>
+      <h3 class="text-lg font-medium mb-2">Você pratica técnicas de relaxamento, respiração ou meditação?</h3>
+      <label class="radio-label"><input type="radio" name="q12" value="5"><span>Sim, regularmente</span></label>
+      <label class="radio-label"><input type="radio" name="q12" value="3"><span>Ocasionalmente</span></label>
+      <label class="radio-label"><input type="radio" name="q12" value="1"><span>Nunca</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você costuma ter fé ou propósito que dá sentido à sua vida?</h3>
-      <label class="radio-label"><input type="radio" name="q13" value="5"><span>Sim, claramente</span></label>
-      <label class="radio-label"><input type="radio" name="q13" value="3"><span>Mais ou menos</span></label>
-      <label class="radio-label"><input type="radio" name="q13" value="1"><span>Não tenho</span></label>
+      <h3 class="text-lg font-medium mb-2">Você tem sono de boa qualidade (dorme e acorda descansado)?</h3>
+      <label class="radio-label"><input type="radio" name="q13" value="5"><span>Sim, sempre</span></label>
+      <label class="radio-label"><input type="radio" name="q13" value="3"><span>Às vezes</span></label>
+      <label class="radio-label"><input type="radio" name="q13" value="1"><span>Raramente</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Com que frequência você se sente grato pela vida?</h3>
-      <label class="radio-label"><input type="radio" name="q14" value="5"><span>Todos os dias</span></label>
-      <label class="radio-label"><input type="radio" name="q14" value="3"><span>Às vezes</span></label>
-      <label class="radio-label"><input type="radio" name="q14" value="1"><span>Raramente</span></label>
+      <h3 class="text-lg font-medium mb-2">Você consegue manter o foco no que faz sem se distrair facilmente?</h3>
+      <label class="radio-label"><input type="radio" name="q14" value="5"><span>Sim</span></label>
+      <label class="radio-label"><input type="radio" name="q14" value="3"><span>Depende do dia</span></label>
+      <label class="radio-label"><input type="radio" name="q14" value="1"><span>Não, me distraio facilmente</span></label>
     </div>
 
-    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você costuma frequentar ambientes de fé, grupos ou comunidade?</h3>
-      <label class="radio-label"><input type="radio" name="q15" value="5"><span>Sim, semanalmente</span></label>
-      <label class="radio-label"><input type="radio" name="q15" value="3"><span>Ocasionalmente</span></label>
-      <label class="radio-label"><input type="radio" name="q15" value="1"><span>Nunca</span></label>
-    </div>
-
-    <!-- 🔹 EIXO FÍSICO E MOVIMENTO -->
+    <!-- 🔹 EIXO 3 – FÍSICO E MOVIMENTO -->
     <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">3. EIXO FÍSICO E MOVIMENTO</h2>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Pratica algum tipo de exercício físico?</h3>
-      <label class="radio-label"><input type="radio" name="q16" value="5"><span>Sim, 3x ou mais por semana</span></label>
-      <label class="radio-label"><input type="radio" name="q16" value="3"><span>1–2x por semana</span></label>
-      <label class="radio-label"><input type="radio" name="q16" value="1"><span>Não pratico</span></label>
+      <h3 class="text-lg font-medium mb-2">Você pratica atividade física?</h3>
+      <label class="radio-label"><input type="radio" name="q15" value="5"><span>Sim, 3x ou mais por semana</span></label>
+      <label class="radio-label"><input type="radio" name="q15" value="3"><span>1 a 2 vezes por semana</span></label>
+      <label class="radio-label"><input type="radio" name="q15" value="1"><span>Raramente ou nunca</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você caminha ou se movimenta ativamente ao longo do dia?</h3>
-      <label class="radio-label"><input type="radio" name="q17" value="5"><span>Sim, todos os dias</span></label>
+      <h3 class="text-lg font-medium mb-2">Você faz alongamentos, yoga ou exercícios de respiração?</h3>
+      <label class="radio-label"><input type="radio" name="q16" value="5"><span>Sim, regularmente</span></label>
+      <label class="radio-label"><input type="radio" name="q16" value="3"><span>Ocasionalmente</span></label>
+      <label class="radio-label"><input type="radio" name="q16" value="1"><span>Nunca</span></label>
+    </div>
+
+    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-medium mb-2">Você mantém uma boa postura e consciência corporal?</h3>
+      <label class="radio-label"><input type="radio" name="q17" value="5"><span>Sim</span></label>
       <label class="radio-label"><input type="radio" name="q17" value="3"><span>Às vezes</span></label>
-      <label class="radio-label"><input type="radio" name="q17" value="1"><span>Raramente</span></label>
+      <label class="radio-label"><input type="radio" name="q17" value="1"><span>Não</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Faz alongamentos, yoga ou mobilidade corporal?</h3>
-      <label class="radio-label"><input type="radio" name="q18" value="5"><span>Sim, regularmente</span></label>
-      <label class="radio-label"><input type="radio" name="q18" value="3"><span>De vez em quando</span></label>
-      <label class="radio-label"><input type="radio" name="q18" value="1"><span>Nunca</span></label>
+      <h3 class="text-lg font-medium mb-2">Você sente dores musculares, articulares ou fadiga frequente?</h3>
+      <label class="radio-label"><input type="radio" name="q18" value="1"><span>Sim, com frequência</span></label>
+      <label class="radio-label"><input type="radio" name="q18" value="3"><span>Às vezes</span></label>
+      <label class="radio-label"><input type="radio" name="q18" value="5"><span>Raramente</span></label>
     </div>
 
-    <!-- 🔹 EIXO SOCIAL E PROPÓSITO -->
-    <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">4. EIXO SOCIAL E PROPÓSITO</h2>
+    <!-- 🔹 EIXO 4 – SOCIAL E ESPIRITUAL -->
+    <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">4. EIXO SOCIAL E ESPIRITUAL</h2>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você tem bons relacionamentos familiares e amizades saudáveis?</h3>
-      <label class="radio-label"><input type="radio" name="q19" value="5"><span>Sim, vários</span></label>
-      <label class="radio-label"><input type="radio" name="q19" value="3"><span>Alguns</span></label>
-      <label class="radio-label"><input type="radio" name="q19" value="1"><span>Quase nenhum</span></label>
-    </div>
-
-    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você costuma rir, se divertir e ter momentos de lazer?</h3>
-      <label class="radio-label"><input type="radio" name="q20" value="5"><span>Frequentemente</span></label>
-      <label class="radio-label"><input type="radio" name="q20" value="3"><span>Às vezes</span></label>
-      <label class="radio-label"><input type="radio" name="q20" value="1"><span>Raramente</span></label>
+      <h3 class="text-lg font-medium mb-2">Você tem amizades e relações saudáveis?</h3>
+      <label class="radio-label"><input type="radio" name="q19" value="5"><span>Sim</span></label>
+      <label class="radio-label"><input type="radio" name="q19" value="3"><span>Algumas</span></label>
+      <label class="radio-label"><input type="radio" name="q19" value="1"><span>Não me sinto conectado</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Sente que tem um propósito ou missão de vida clara?</h3>
-      <label class="radio-label"><input type="radio" name="q21" value="5"><span>Sim, totalmente</span></label>
-      <label class="radio-label"><input type="radio" name="q21" value="3"><span>Parcialmente</span></label>
-      <label class="radio-label"><input type="radio" name="q21" value="1"><span>Não tenho certeza</span></label>
+      <h3 class="text-lg font-medium mb-2">Você participa de atividades em grupo (igreja, voluntariado, esportes)?</h3>
+      <label class="radio-label"><input type="radio" name="q20" value="5"><span>Sim</span></label>
+      <label class="radio-label"><input type="radio" name="q20" value="3"><span>Ocasionalmente</span></label>
+      <label class="radio-label"><input type="radio" name="q20" value="1"><span>Não participo</span></label>
     </div>
 
     <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
-      <h3 class="text-lg font-medium mb-2">Você costuma ajudar outras pessoas ou fazer o bem de forma voluntária?</h3>
-      <label class="radio-label"><input type="radio" name="q22" value="5"><span>Frequentemente</span></label>
-      <label class="radio-label"><input type="radio" name="q22" value="3"><span>Às vezes</span></label>
-      <label class="radio-label"><input type="radio" name="q22" value="1"><span>Raramente ou nunca</span></label>
+      <h3 class="text-lg font-medium mb-2">Você sente gratidão e fé no seu dia a dia?</h3>
+      <label class="radio-label"><input type="radio" name="q21" value="5"><span>Sim, diariamente</span></label>
+      <label class="radio-label"><input type="radio" name="q21" value="3"><span>Às vezes</span></label>
+      <label class="radio-label"><input type="radio" name="q21" value="1"><span>Raramente</span></label>
     </div>
 
-    <!-- Botão de cálculo -->
-    <div class="text-center mt-10">
+    <!-- 🔹 EIXO 5 – FINANCEIRO E LAZER CONSCIENTE -->
+    <h2 class="text-2xl font-bold text-accent-orange pt-4 border-t border-gray-200">5. EIXO FINANCEIRO E LAZER CONSCIENTE</h2>
+
+    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-medium mb-2">Você tem controle financeiro (sabe quanto ganha e quanto gasta)?</h3>
+      <label class="radio-label"><input type="radio" name="q22" value="5"><span>Sim, totalmente organizado</span></label>
+      <label class="radio-label"><input type="radio" name="q22" value="3"><span>Mais ou menos</span></label>
+      <label class="radio-label"><input type="radio" name="q22" value="1"><span>Não, vivo no automático</span></label>
+    </div>
+
+    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-medium mb-2">Você se permite descansar e aproveitar a vida?</h3>
+      <label class="radio-label"><input type="radio" name="q23" value="5"><span>Sim, sempre</span></label>
+      <label class="radio-label"><input type="radio" name="q23" value="3"><span>Às vezes</span></label>
+      <label class="radio-label"><input type="radio" name="q23" value="1"><span>Não consigo</span></label>
+    </div>
+
+    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-medium mb-2">Você sente prazer nas suas atividades diárias (trabalho, rotina, descanso)?</h3>
+      <label class="radio-label"><input type="radio" name="q24" value="5"><span>Sim, amo o que faço</span></label>
+      <label class="radio-label"><input type="radio" name="q24" value="3"><span>Mais ou menos</span></label>
+      <label class="radio-label"><input type="radio" name="q24" value="1"><span>Não, me sinto sobrecarregado</span></label>
+    </div>
+
+    <div class="question-card bg-gray-50 p-4 rounded-lg shadow-sm">
+      <h3 class="text-lg font-medium mb-2">Você acredita que pode chegar aos 100 anos com lucidez e independência?</h3>
+      <label class="radio-label"><input type="radio" name="q25" value="5"><span>Sim, acredito plenamente</span></label>
+      <label class="radio-label"><input type="radio" name="q25" value="3"><span>Talvez, com esforço</span></label>
+      <label class="radio-label"><input type="radio" name="q25" value="1"><span>Não acredito</span></label>
+    </div>
+
+    <!-- BOTÃO -->
+    <div class="text-center mt-8">
       <button type="submit"
-              class="w-full bg-primary-brown hover:bg-dark-brown text-white font-bold py-3 rounded-xl transition duration-300 transform hover:scale-[1.01] shadow-lg">
-        🎯 CALCULAR MINHA EXPECTATIVA DE VIDA
+              class="btn-treatment text-white font-semibold text-lg px-8 py-3 rounded-full transition">
+        Calcular Expectativa de Vida
       </button>
     </div>
   </form>
 
-  <!-- 🔹 RESULTADO -->
-  <div id="resultado" class="mt-10 p-6 bg-secondary-cream border border-primary-brown rounded-xl shadow-inner hidden">
-    <h2 class="text-2xl font-bold text-dark-brown mb-4 text-center">O Seu Potencial de Longevidade</h2>
-
-    <div class="mb-4 p-4 text-center rounded-lg border-2 border-primary-brown">
-      <p class="text-sm text-gray-600 font-semibold">Idade Atual:</p>
-      <p id="ageDisplay" class="text-3xl font-extrabold text-primary-brown"></p>
-    </div>
-
-    <p id="resultText" class="text-xl font-bold text-center mb-5"></p>
-    <p id="interpretationText" class="text-gray-700 mb-6 text-center"></p>
-
-    <div class="p-4 bg-primary-brown rounded-lg text-white text-center shadow-lg">
-      <p class="font-bold text-xl mb-2">Viva com Qualidade, Viva Mais!</p>
-      <p id="actionMessage" class="text-sm mb-2"></p>
-    </div>
+  <!-- RESULTADO -->
+  <div id="resultado" class="hidden mt-10 text-center p-6 bg-secondary-cream rounded-xl shadow-lg border-t-4 border-primary-brown">
+    <p id="resultText" class="text-2xl font-bold mb-4"></p>
+    <p id="interpretationText" class="text-gray-700 mb-6"></p>
+    <div id="actionMessage" class="text-lg font-medium"></div>
   </div>
-
-</div>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('quizForm');
@@ -285,152 +305,128 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultText = document.getElementById('resultText');
   const interpretationText = document.getElementById('interpretationText');
   const actionMessage = document.getElementById('actionMessage');
-  const ageDisplay = document.getElementById('ageDisplay');
 
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    calculateLongevity();
+    calcularVida();
   });
 
-  function calculateLongevity() {
-    const ageInput = document.getElementById('chronologicalAge');
-    const chronologicalAge = parseInt(ageInput.value);
-
-    if (isNaN(chronologicalAge) || chronologicalAge < 10 || chronologicalAge > 100) {
-      resultText.innerHTML = '<span class="text-red-500 font-bold">ERRO:</span> Informe uma idade válida (entre 10 e 100 anos).';
-      interpretationText.textContent = '';
-      actionMessage.textContent = '';
-      ageDisplay.textContent = '—';
+  function calcularVida() {
+    const idade = parseInt(document.getElementById('chronologicalAge').value);
+    if (isNaN(idade) || idade < 10 || idade > 100) {
       resultadoDiv.classList.remove('hidden');
+      resultText.innerHTML = "<span class='text-red-500 font-bold'>⚠️ Informe uma idade válida (entre 10 e 100 anos).</span>";
+      interpretationText.textContent = "";
+      actionMessage.textContent = "";
       resultadoDiv.scrollIntoView({ behavior: 'smooth' });
       return;
     }
 
-    const totalQuestions = 22; // número de perguntas atuais
-    let totalScore = 0;
-    let questionsAnswered = 0;
-    let missingQuestions = [];
+    const totalPerguntas = 25;
+    let pontuacaoTotal = 0;
+    let respondidas = 0;
 
-    for (let i = 1; i <= totalQuestions; i++) {
-      const qName = `q${i}`;
-      const checkedRadio = form.querySelector(`input[name="${qName}"]:checked`);
-      if (checkedRadio) {
-        totalScore += parseInt(checkedRadio.value);
-        questionsAnswered++;
-      } else if (document.getElementById(qName) && document.getElementById(qName).type === "number") {
-        const numericValue = parseInt(document.getElementById(qName).value);
-        if (!isNaN(numericValue)) {
-          let value = numericValue;
-          if (qName === "q8") {
-            if (value < 5) totalScore += 1;
-            else if (value <= 7) totalScore += 5;
-            else totalScore += 3;
+    for (let i = 1; i <= totalPerguntas; i++) {
+      const radios = document.getElementsByName(`q${i}`);
+      let valor = null;
+      radios.forEach(r => { if (r.checked) valor = parseInt(r.value); });
+      if (valor !== null) {
+        pontuacaoTotal += valor;
+        respondidas++;
+      } else if (document.getElementById(`q${i}`) && document.getElementById(`q${i}`).type === "number") {
+        const num = parseInt(document.getElementById(`q${i}`).value);
+        if (!isNaN(num)) {
+          if (i === 8) { // sono
+            if (num < 5) pontuacaoTotal += 1;
+            else if (num <= 7) pontuacaoTotal += 5;
+            else pontuacaoTotal += 3;
           }
-          questionsAnswered++;
-        } else {
-          missingQuestions.push(i);
+          respondidas++;
         }
-      } else {
-        missingQuestions.push(i);
       }
     }
 
-    if (questionsAnswered !== totalQuestions) {
-      resultText.innerHTML = `<span class="text-red-500 font-bold">ERRO:</span> Faltam responder: ${missingQuestions.join(', ')}.`;
-      interpretationText.textContent = '';
-      actionMessage.textContent = '';
-      ageDisplay.textContent = `${chronologicalAge} anos`;
+    if (respondidas < totalPerguntas) {
       resultadoDiv.classList.remove('hidden');
+      resultText.innerHTML = "<span class='text-red-500 font-bold'>⚠️ Responda todas as perguntas antes de calcular.</span>";
+      interpretationText.textContent = "";
+      actionMessage.textContent = "";
       resultadoDiv.scrollIntoView({ behavior: 'smooth' });
       return;
     }
 
-    // 🔹 Lógica realista baseada na epigenética e dados científicos
-    const averageScore = totalScore / totalQuestions;
-    let baseLifeExpectancy;
+    // 🎯 Cálculo realista baseado em idade + estilo de vida
+    const media = pontuacaoTotal / totalPerguntas;
+    let expectativaBase = idade < 30 ? 88 : idade < 40 ? 86 : idade < 50 ? 84 : idade < 60 ? 83 :
+                          idade < 70 ? 82 : idade < 80 ? 81 : 79;
 
-    if (chronologicalAge < 30) baseLifeExpectancy = 88;
-    else if (chronologicalAge < 40) baseLifeExpectancy = 86;
-    else if (chronologicalAge < 50) baseLifeExpectancy = 84;
-    else if (chronologicalAge < 60) baseLifeExpectancy = 83;
-    else if (chronologicalAge < 70) baseLifeExpectancy = 82;
-    else if (chronologicalAge < 80) baseLifeExpectancy = 81;
-    else baseLifeExpectancy = 79;
+    let modificador = media >= 4.5 ? 1.18 : media >= 3.5 ? 1.1 : media >= 2.5 ? 1.0 : 0.85;
+    let expectativaTotal = Math.round(expectativaBase * modificador);
+    if (expectativaTotal < idade + 5) expectativaTotal = idade + 5;
+    if (expectativaTotal > 105) expectativaTotal = 105;
 
-    let modifier;
-    if (averageScore >= 4.5) modifier = 1.18;
-    else if (averageScore >= 3.5) modifier = 1.10;
-    else if (averageScore >= 2.5) modifier = 1.00;
-    else modifier = 0.85;
+    const anosRestantes = expectativaTotal - idade;
+    let cor, titulo, mensagem;
 
-    let estimatedTotalLifespan = Math.round(baseLifeExpectancy * modifier);
-
-    if (estimatedTotalLifespan < chronologicalAge + 5) estimatedTotalLifespan = chronologicalAge + 5;
-    if (estimatedTotalLifespan > 105) estimatedTotalLifespan = 105;
-
-    const estimatedRemainingLifespan = estimatedTotalLifespan - chronologicalAge;
-
-    // 💬 Mensagens profundas e inspiradoras
-    let assessment, message, color;
-
-    if (averageScore < 2.5) {
-      assessment = "⚠️ Seu corpo está pedindo socorro.";
-      color = "text-red-600";
-      message = `
-        Você pode viver até <b>${estimatedTotalLifespan} anos</b>, mas precisa agir agora.<br><br>
-        💭 Você quer envelhecer com lucidez, energia e independência?<br>
-        🌿 O <b>Tratamento Vida</b> foi criado para ampliar o tempo de vida com qualidade e propósito.<br><br>
+    if (media < 2.5) {
+      cor = "text-red-600";
+      titulo = "⚠️ Seu corpo está pedindo socorro";
+      mensagem = `
+        Você pode viver até <b>${expectativaTotal} anos</b>, mas seus hábitos estão acelerando o envelhecimento.<br><br>
+        💭 Ainda dá tempo de mudar tudo.<br>
+        O corpo se regenera quando o ambiente interno muda.<br><br>
+        🌿 O <b>Tratamento Vida</b> foi criado para ampliar o tempo de vida com qualidade e lucidez.<br><br>
         <a href="https://www.tratamentovida.com.br" target="_blank"
            class="inline-block mt-3 bg-primary-brown text-white px-6 py-3 rounded-full font-bold shadow hover:bg-dark-brown transition">
            Faça sua avaliação agora
         </a>`;
     } 
-    else if (averageScore < 3.5) {
-      assessment = "🌱 Você está no meio do caminho.";
-      color = "text-yellow-600";
-      message = `
-        Ainda há muito espaço para evolução. Seu corpo responde a cada escolha consciente que faz.<br><br>
-        🌿 O <b>Tratamento Vida</b> ajuda você a modular sua vitalidade e alcançar longevidade real.<br><br>
+    else if (media < 3.5) {
+      cor = "text-yellow-600";
+      titulo = "🌱 Você está no meio do caminho";
+      mensagem = `
+        Sua vitalidade está oscilando, mas o corpo responde rápido às mudanças.<br><br>
+        Cada refeição, respiração e pensamento moldam seus próximos anos.<br><br>
+        🌿 O <b>Tratamento Vida</b> te ajuda a ajustar seu terreno biológico e prolongar a longevidade real.<br><br>
         <a href="https://www.tratamentovida.com.br" target="_blank"
            class="inline-block mt-3 bg-primary-brown text-white px-6 py-3 rounded-full font-bold shadow hover:bg-dark-brown transition">
-           Comece a transformação
+           Comece sua transformação
         </a>`;
     } 
-    else if (averageScore < 4.5) {
-      assessment = "💚 Seu estilo de vida é bom, mas pode ser extraordinário.";
-      color = "text-green-600";
-      message = `
-        Você está construindo uma vida longa e saudável. Pequenos ajustes podem te levar muito além.<br><br>
-        🌿 O <b>Tratamento Vida</b> foi criado para potencializar seus resultados e manter sua vitalidade no auge.<br><br>
+    else if (media < 4.5) {
+      cor = "text-green-600";
+      titulo = "💚 Estilo de vida saudável";
+      mensagem = `
+        Você está no caminho certo!<br>
+        Seu corpo está em equilíbrio e a mente começa a acompanhar.<br><br>
+        🌿 O <b>Tratamento Vida</b> pode potencializar seus resultados e te levar além do bem-estar comum.<br><br>
         <a href="https://www.tratamentovida.com.br" target="_blank"
            class="inline-block mt-3 bg-primary-brown text-white px-6 py-3 rounded-full font-bold shadow hover:bg-dark-brown transition">
            Descubra seu potencial máximo
         </a>`;
     } 
     else {
-      assessment = "🌟 Vitalidade Excepcional!";
-      color = "text-blue-600";
-      message = `
-        Seu corpo e sua mente estão em harmonia com a longevidade.<br><br>
+      cor = "text-blue-600";
+      titulo = "🌟 Vitalidade Excepcional";
+      mensagem = `
+        Você está vivendo no seu auge biológico!<br><br>
         Continue nutrindo seus hábitos e fortalecendo o que te faz viver com propósito.<br><br>
-        🌿 O <b>Tratamento Vida</b> é o próximo passo para manter sua lucidez e energia até os 100 anos.<br><br>
+        🌿 O <b>Tratamento Vida</b> é o próximo passo para manter essa lucidez até os 100 anos.<br><br>
         <a href="https://www.tratamentovida.com.br" target="_blank"
            class="inline-block mt-3 bg-primary-brown text-white px-6 py-3 rounded-full font-bold shadow hover:bg-dark-brown transition">
            Mantenha sua excelência
         </a>`;
     }
 
-    // Exibir resultado
-    ageDisplay.textContent = `${chronologicalAge} anos`;
-    resultText.innerHTML = `<span class="${color} font-bold">${assessment}</span><br><br>
-      Expectativa de vida total: <b class="${color} text-3xl">${estimatedTotalLifespan} anos</b>`;
-    interpretationText.innerHTML = `
-      Mantendo seus hábitos atuais, você ainda tem o potencial de viver cerca de 
-      <b>${estimatedRemainingLifespan} anos</b> com saúde e consciência.<br><br>
-      Mas lembre-se: não se trata de contar anos, e sim de <b>somar vida aos anos</b>.`;
-    actionMessage.innerHTML = message;
-
+    // 🧠 Exibir resultado
     resultadoDiv.classList.remove('hidden');
+    resultText.innerHTML = `<span class="${cor} font-bold">${titulo}</span><br><br>
+      Expectativa total: <b class="${cor} text-3xl">${expectativaTotal} anos</b>`;
+    interpretationText.innerHTML = `
+      Mantendo seus hábitos atuais, você ainda tem cerca de <b>${anosRestantes} anos</b> de vida com qualidade.<br><br>
+      Lembre-se: não é sobre contar anos, e sim sobre <b>somar vida aos anos</b>.`;
+    actionMessage.innerHTML = mensagem;
+
     resultadoDiv.scrollIntoView({ behavior: 'smooth' });
   }
 });
